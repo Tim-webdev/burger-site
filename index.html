@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tim-WebDev | Order Your Favorites</title>
+  <meta name="description" content="Stacked-to-order burgers, golden fries and ice-cold drinks. Pick your favorites and order in minutes." />
+  <meta name="theme-color" content="#F6B72C" />
+  <link rel="icon" type="image/png" href="./logo.png" />
+  <link rel="preload" as="image" href="./animation/desktop/f001.webp" type="image/webp" media="(min-width: 641px)" />
+  <script type="module" crossorigin src="./assets/index-apu4FPWp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-AOa5MMRS.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- decorative sprites -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 0c.7 6.2 5.8 11.3 12 12-6.2.7-11.3 5.8-12 12-.7-6.2-5.8-11.3-12-12C6.2 11.3 11.3 6.2 12 0z" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M8 3l10 9-10 9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 4 20 4c0 10-6 15-15 15zm0 0 8-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-stack" viewBox="0 0 24 24"><path d="M3 9c0-4 4-6 9-6s9 2 9 6H3zm0 3h18M4 15h16M5 15c0 3 3 5 7 5s7-2 7-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 18.5h2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Tim-WebDev, back to top">
+        <img class="brand-logo" src="./logo.png" width="44" height="44" alt="Tim-WebDev logo" />
+        <span class="brand-name">Tim-WebDev</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary" data-nav>
+        <ul>
+          <li><a href="#home" data-nav-link>Home</a></li>
+          <li><a href="#menu" data-nav-link>Menu</a></li>
+          <li><a href="#combos" data-nav-link>Combos</a></li>
+          <li><a href="#about" data-nav-link>About</a></li>
+          <li><a href="#contact" data-nav-link>Contact</a></li>
+        </ul>
+        <a class="btn btn-gold nav-cta" href="#menu" data-order>Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ═════════ HERO (scroll-scrubbed burger) ═════════ -->
+    <section class="hero-track" id="home" data-hero-track aria-label="Order your favorites">
+      <div class="hero-sticky">
+        <div class="hero-panel">
+          <div class="hero-main">
+            <div class="hero-copy">
+              <p class="eyebrow">Fresh · Stacked · Ready</p>
+              <h1><span class="line"><span>Order Your</span></span> <span class="line"><span class="gold">Favorites</span></span></h1>
+              <p class="lead">Juicy double-patty burgers, golden fries and ice-cold drinks. Pick what you love and order in a few taps.</p>
+              <div class="hero-actions">
+                <a class="btn btn-gold btn-lg" href="#menu" data-order>Order Now</a>
+                <a class="btn btn-ghost btn-lg" href="#menu">View Menu</a>
+              </div>
+              <ol class="stage-steps" aria-hidden="true">
+                <li data-stage-step class="is-active"><b>01</b> Stacked</li>
+                <li data-stage-step><b>02</b> Layer by layer</li>
+                <li data-stage-step><b>03</b> A final mist</li>
+              </ol>
+            </div>
+
+            <div class="hero-visual">
+              <svg class="deco chev c1" aria-hidden="true"><use href="#i-chevron"/></svg>
+              <svg class="deco spark s1" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <svg class="deco spark s2" aria-hidden="true"><use href="#i-sparkle"/></svg>
+              <svg class="deco chev c2" aria-hidden="true"><use href="#i-chevron"/></svg>
+              <div class="burger-stage" id="burger-stage" data-state="loading">
+                <img class="burger-poster" src="./animation/desktop/f001.webp" width="949" height="653" alt="A stacked double cheeseburger with lettuce, tomato, pickles and melted cheese" fetchpriority="high" />
+                <canvas id="burger-canvas" aria-hidden="true"></canvas>
+              </div>
+              <div class="scroll-hint" aria-hidden="true">
+                <span>Scroll to build the burger</span>
+                <i><b data-hero-progress></b></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- promo strip -->
+          <div class="promo-strip" role="group" aria-label="Highlights">
+            <ul>
+              <li>
+                <img src="./images/1090011916093876544.jpg" width="56" height="56" alt="" />
+                <div><strong>Food Delivery</strong><span>Burgers brought to you</span></div>
+              </li>
+              <li>
+                <img src="./images/cutouts/burger-fries-box-crop.jpg" width="56" height="56" alt="" style="object-position:50% 50%" />
+                <div><strong>Combos</strong><span>Burger &amp; fries, sorted</span></div>
+              </li>
+              <li>
+                <img src="./images/Soda.jpg" width="56" height="56" alt="" style="object-position:50% 60%" />
+                <div><strong>Beverages</strong><span>Cold drinks &amp; shakes</span></div>
+              </li>
+            </ul>
+            <a class="btn btn-gold" href="#combos">Explore Combos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ SECOND BANNER ═════════ -->
+    <section class="section banner" aria-labelledby="banner-title">
+      <div class="banner-card" data-reveal>
+        <svg class="deco chev bc1" aria-hidden="true"><use href="#i-chevron"/></svg>
+        <svg class="deco spark bs1" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <svg class="deco spark bs2" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <div class="banner-copy">
+          <h2 id="banner-title">Order Fast Food <br />in Minutes</h2>
+          <p>Browse the menu, pick your burger, add fries and a cold drink. Fast food, made simple.</p>
+          <a class="btn btn-gold btn-lg" href="#menu">See the Menu</a>
+        </div>
+        <div class="banner-visual">
+          <span class="sun" aria-hidden="true"></span>
+          <img data-parallax src="./images/cutouts/double-patty-burger.webp" width="648" height="599" loading="lazy" alt="Double patty cheeseburger" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ MENU ═════════ -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="panel panel-cream">
+        <header class="section-head" data-reveal>
+          <p class="kicker">Recommended</p>
+          <h2 id="menu-title">Our Menu</h2>
+          <p class="sub">Choose a category, tap an item to see more, then order.</p>
+        </header>
+        <div class="filters" role="group" aria-label="Filter menu by category" data-filters></div>
+        <div class="menu-grid" data-menu-grid aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ═════════ SIGNATURE COMBOS ═════════ -->
+    <section class="section combos" id="combos" aria-labelledby="combos-title">
+      <div class="panel panel-white combos-panel">
+        <div class="combos-media" data-reveal>
+          <img src="./images/cutouts/burger-fries-box-crop.jpg" width="736" height="770" loading="lazy" alt="A box of two loaded burgers with golden fries and dipping sauces" />
+          <span class="badge">Signature combo</span>
+        </div>
+        <div class="combos-copy">
+          <p class="kicker">Signature combos</p>
+          <h2 id="combos-title">Build Your Perfect Meal</h2>
+          <p class="sub">Three easy steps to the classic burger, fries and drink meal.</p>
+          <ol class="steps">
+            <li data-reveal>
+              <span class="num">1</span>
+              <div><h3>Pick a burger</h3><p>Start with the star of the show.</p></div>
+              <button class="chip-link" type="button" data-jump="burgers">Burgers <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            </li>
+            <li data-reveal>
+              <span class="num">2</span>
+              <div><h3>Add a side</h3><p>Fries, onion rings or crispy nuggets.</p></div>
+              <button class="chip-link" type="button" data-jump="sides">Sides <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            </li>
+            <li data-reveal>
+              <span class="num">3</span>
+              <div><h3>Finish with a drink</h3><p>Cold cola or a creamy milkshake.</p></div>
+              <button class="chip-link" type="button" data-jump="drinks">Drinks <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            </li>
+          </ol>
+          <button class="btn btn-red btn-lg" type="button" data-jump="combos">See all combos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ WHY CHOOSE US ═════════ -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="panel panel-cream why-panel">
+        <div class="why-copy">
+          <header data-reveal>
+            <p class="kicker">Why choose us</p>
+            <h2 id="why-title">Burgers Worth Ordering</h2>
+          </header>
+          <ul class="why-list">
+            <li data-reveal><span class="ico"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><div><h3>Fresh ingredients</h3><p>Crisp lettuce, ripe tomato, pickles and melted cheese on every stack.</p></div></li>
+            <li data-reveal><span class="ico"><svg aria-hidden="true"><use href="#i-stack"/></svg></span><div><h3>Stacked with care</h3><p>Every layer in its place, from sesame bun to juicy patty.</p></div></li>
+            <li data-reveal><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><div><h3>Easy ordering</h3><p>Choose your favorites on your phone and order in a few taps.</p></div></li>
+          </ul>
+        </div>
+        <figure class="phone-card" data-reveal>
+          <img src="./images/891712794999039069.jpg" width="736" height="1164" loading="lazy" alt="A person in a red shirt holding a phone showing a food ordering app" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═════════ PREPARATION ═════════ -->
+    <section class="section prep" aria-labelledby="prep-title">
+      <div class="panel panel-burgundy prep-panel">
+        <figure class="prep-photo" data-reveal>
+          <img src="./images/Chef Cooking Burger.jpg" width="735" height="490" loading="lazy" alt="A chef assembling burgers on a counter in a busy kitchen" />
+        </figure>
+        <div class="prep-copy">
+          <p class="kicker light">Made to order</p>
+          <h2 id="prep-title">Built Layer by Layer</h2>
+          <p class="sub light">Every burger is assembled with care. Here is what goes into the stack, from the top down.</p>
+          <ul class="chips" data-reveal>
+            <li>Sesame bun</li><li>Tomato</li><li>Pickles</li><li>Melted cheese</li><li>Beef patty</li><li>Crisp lettuce</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ ABOUT ═════════ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="panel panel-white about-panel">
+        <figure class="about-photo" data-reveal>
+          <img src="./images/60728294967341093.jpg" width="736" height="981" loading="lazy" alt="A big table full of shared dishes and snacks" />
+        </figure>
+        <div class="about-copy" data-reveal>
+          <p class="kicker">About us</p>
+          <h2 id="about-title">Good Food, Made for Sharing</h2>
+          <p>We love food that brings people together: big burgers, hot fries and cold drinks, ordered easily and enjoyed with friends and family.</p>
+          <p>Browse the menu, choose your favorites and order. It really is that simple.</p>
+          <a class="btn btn-red" href="#menu">Explore the Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ FINAL CTA ═════════ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="cta-card" data-reveal>
+        <svg class="deco spark cs1" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <svg class="deco spark cs2" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <div class="cta-copy">
+          <h2 id="cta-title">Hungry? <br />Pick Your Favorites.</h2>
+          <p>Burgers, fries and drinks are waiting.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold btn-lg" href="#menu" data-order>Order Now</a>
+            <a class="btn btn-ghost btn-lg" href="#combos">Explore Combos</a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <img class="cta-burger" src="./images/cutouts/double-patty-burger.webp" width="648" height="599" loading="lazy" alt="Double patty cheeseburger" />
+          <img class="cta-fries" src="./images/cutouts/fries-red-pack.webp" width="560" height="625" loading="lazy" alt="Red pack of golden fries" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ CONTACT ═════════ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="panel panel-cream">
+        <header class="section-head" data-reveal>
+          <p class="kicker">Contact</p>
+          <h2 id="contact-title">Get in Touch</h2>
+        </header>
+        <ul class="contact-list" data-contact-list></ul>
+        <p class="contact-empty" data-contact-empty hidden>Contact details are coming soon. In the meantime, browse the menu and pick your favorites.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-brand">
+        <img src="./logo.png" width="56" height="56" alt="Tim-WebDev logo" loading="lazy" />
+        <span class="brand-name">Tim-WebDev</span>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#combos">Combos</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Menu categories">
+        <h2>Menu</h2>
+        <ul data-footer-menu></ul>
+      </nav>
+      <div class="footer-contact" data-footer-contact hidden>
+        <h2>Find us</h2>
+        <ul data-footer-contact-list></ul>
+      </div>
+      <div class="footer-social" data-footer-social hidden>
+        <h2>Follow</h2>
+        <ul data-footer-social-list></ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span data-year>2026</span> Tim-WebDev. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top" data-to-top><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+
+  <dialog class="item-dialog" id="item-dialog" aria-labelledby="dlg-title">
+    <button class="dlg-close" type="button" aria-label="Close" data-dlg-close><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="dlg-media" data-dlg-media></div>
+    <div class="dlg-body">
+      <p class="kicker" data-dlg-cat></p>
+      <h3 id="dlg-title" data-dlg-title></h3>
+      <p data-dlg-desc></p>
+      <p class="price" data-dlg-price hidden></p>
+      <button class="btn btn-red btn-lg" type="button" data-dlg-order>Order this</button>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <noscript><p style="padding:1rem;text-align:center">Please enable JavaScript to see the menu and the burger animation.</p></noscript>
+</body>
+</html>
